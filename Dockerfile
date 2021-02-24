@@ -1,6 +1,6 @@
 FROM golang:alpine
-COPY codeengine.go /
-RUN go build -o /codeengine /codeengine.go
+# COPY codeengine.go /
+RUN go build ./codeengine.go
 
 # Copy the exe into a smaller base image
 FROM alpine
