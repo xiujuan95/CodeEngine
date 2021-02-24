@@ -1,8 +1,5 @@
 FROM golang:alpine
 
-COPY . /go/build
-WORKDIR /go/build
-
 COPY codeengine.go /
 RUN go build -o /codeengine /codeengine.go
 
